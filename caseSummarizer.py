@@ -14,7 +14,7 @@ import pandas as pd
 import sys
 
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 
 def check_input_files(options):
@@ -45,7 +45,7 @@ t'.format(options.input_path, window_size, options.sample, window_size)
         options.files['CNV']['ClinSV'] = '{}/CNV/ClinSV/{}.RARE_PASS_GENE.ligh\
 t.CandidateGenes.xlsx'.format(options.input_path, options.sample)
     if 'SV' in options.variant_types:
-        sv_path = '{}/SV/{}.SV.intersection.rehead.annot.\
+        sv_path = '{}/SV/{}.SV.intersection.rehead.annot.CandidateGenes.\
 tsv'.format(options.input_path, options.sample)
         tmp_file_paths.append(sv_path)
         options.files['SV'] = sv_path
