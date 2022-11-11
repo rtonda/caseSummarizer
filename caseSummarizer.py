@@ -14,7 +14,7 @@ import pandas as pd
 import sys
 
 
-__version__ = '1.0.1'
+__version__ = '1.0.2'
 
 
 def check_input_files(options):
@@ -337,7 +337,7 @@ def get_cs_options(argv):
     cs_parser.add_argument(
         '--report_template',
         '-RT',
-        default='/caseSummarizer-1.0/case_summarizer_default.docx',
+        default='/caseSummarizer-1.0.2/case_summarizer_default.docx',
         help='FILE Path to the report template',
     )
     cs_parser.add_argument(
